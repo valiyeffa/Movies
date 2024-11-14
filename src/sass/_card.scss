@@ -1,0 +1,33 @@
+.single-card {
+    .card {
+        border: 0;
+        background-color: transparent;
+        .card-body {
+            .card-body-head {
+                @include flex();
+
+                .card-year {
+                    color: black;
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+
+                .card-tv {
+                    @extend .card-year;
+                    padding: 2px;
+                    border: 1px solid rgba(128, 128, 128, 0.479);
+                }
+            }
+
+            .card-text {
+                color: red;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .card-title{
+                font-size: 15px;
+            }
+        }
+    }
+}

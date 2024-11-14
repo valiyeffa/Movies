@@ -1,0 +1,16 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin jstcont-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}

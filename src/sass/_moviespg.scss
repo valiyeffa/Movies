@@ -1,0 +1,17 @@
+.movies-page {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 440px;
+    background-color: white;
+    padding: 70px;
+
+}
+
+.dashboard{
+    @extend .movies-page;
+}
+
+.add-movie{
+    @extend .movies-page;
+}

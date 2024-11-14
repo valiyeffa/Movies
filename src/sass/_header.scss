@@ -1,0 +1,88 @@
+.header-bg {
+    background-image: url("http://digiflex.themezinho.net/wp-content/uploads/2020/12/page-header-bg.jpg");
+    position: fixed;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    @include jstcont-center();
+
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.426);
+        top: 0;
+        position: absolute;
+    }
+
+    nav {
+        z-index: 100;
+        width: 100%;
+        position: absolute;
+
+        .container-fluid {
+            width: 95%;
+
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            color: white;
+                            font-weight: 600;
+
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                    }
+
+                }
+
+                .left-side {
+                    gap: 15px;
+
+                    a {
+                        @include flex();
+                        text-decoration: none;
+                        color: white;
+                        font-size: 17px;
+                        font-weight: 600;
+
+                    }
+
+                    .acount-icon {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-body {
+        width: 80%;
+        height: 100%;
+        @include jstcont-center();
+        flex-direction: column;
+        position: absolute;
+        gap: 10px;
+        z-index: 15;
+        color: white;
+
+        h1 {
+            font-weight: 700;
+            font-size: 55px;
+
+            span {
+                color: red;
+            }
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+    }
+}

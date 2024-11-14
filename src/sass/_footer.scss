@@ -1,0 +1,34 @@
+.footer {
+    position: relative;
+    background-color: black;
+    padding: 1px;
+
+    .container {
+        footer {
+            color: white;
+            padding-top: 100px;
+
+            .row {
+                .foot-left-side {
+                    .lang-btn {
+                        @include button();
+                        @include flex();
+                        font-size: 17px;
+                        gap: 35px;
+                        border: 1px solid rgba(255, 255, 255, 0.44);
+                        padding: 13px;
+                    }
+                }
+
+                ul {
+                    li {
+                        a {
+                            color: white !important;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
